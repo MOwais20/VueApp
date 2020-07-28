@@ -32,6 +32,10 @@ jobs:
       
     - name: Install Surge
       run: npm install --global surge
-      
-    - name: Run surge
-      run: surge mo_simpleProductPageVue.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+    
+    - name: Deploy to Surge
+      uses: dswistowski/surge-sh-action@v1
+      with:
+        domain: 'mo_SimpleVuejsApp.surge.sh'
+        project: '.'
+        token: ${{ secrets.SURGE.TOKEN }}
