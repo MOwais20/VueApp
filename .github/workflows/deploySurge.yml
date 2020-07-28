@@ -38,4 +38,4 @@ jobs:
       with:
         domain: 'mo_SimpleVuejsApp.surge.sh'
         project: '.'
-        token: ${{ secrets.SURGE.TOKEN }}
+        token: ${{ secrets.SURGE_TOKEN }}
