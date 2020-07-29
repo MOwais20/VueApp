@@ -105,3 +105,25 @@ margin: 10px;
 font-weight: bolder;
 text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .column {
+        flex-wrap: wrap;
+    }
+
+    .product-image, img {
+        height: 60vh;
+        width: 60vh;
+        margin: 5px;
+    }
+
+    .product-info {
+        margin: 20px;
+    }
+
+}
