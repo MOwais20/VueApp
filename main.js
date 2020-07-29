@@ -184,7 +184,7 @@ Vue.component('product', {
                 -
             </button>
 
-            <product-tabs :reviews="reviews"></product-tabs>
+            <product-tabs class="product-tabs" :reviews="reviews"></product-tabs>
         
         </div>
 
